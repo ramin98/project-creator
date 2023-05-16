@@ -1,0 +1,62 @@
+.project-details {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 20px 0 60px;
+}
+
+.project-instruction-first {
+  color: #2b8ce6;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.project-details form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.back-continue {
+  display: flex;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.back {
+  padding: 13px 0px;
+  width: 120px;
+  background: rgba(250, 250, 250, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
+
+.continue {
+  padding: 13px 0px;
+  width: 328px;
+  background: #2b8ce6;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  color: black;
+  border: none;
+}
+
+@media screen and (max-width: 900px) {
+  .project-details {
+    padding: 20px 18px 0 18px;
+  }
+  .back-continue {
+    width: 100%;
+  }
+  .back-continue button {
+    width: 100%;
+  }
+  .back-continue a {
+    width: 100%;
+  }
+  .project-instruction-first {
+    font-size: 14px;
+  }
+}

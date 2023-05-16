@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button{
+  cursor: pointer;
+}
+
+main{
+  width: 100%;
+}
+
+body {
+  background-color:#1E1E1E;;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.radio {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  padding-top: 2px;
+  font-weight: 400;
+  padding-left: 32px;
+}
+
+.radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.radio input[type="radio"]:checked ~ .checkmark:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 5px;
+  left: 5px;
+  height: 12px;
+  width: 12px;
+  background-color: #2B8CE6;
+  border-radius: 50%;
+}
+
+.project-instruction-first {
+  color: #2b8ce6;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.user-page{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.user-page .project-instruction-first{
+  font-size: 30px;
+}
